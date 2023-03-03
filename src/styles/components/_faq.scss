@@ -1,0 +1,73 @@
+@media screen and (max-width: 450px){.faq {
+    padding: 50px 0;
+    &__block {
+        color: $color-text;
+        padding: 40px 0px;
+    }
+    &__title {
+        font-family: "Nunito";
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-family: "Nunito";
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+}}
+@media screen and (min-width: 450px) and (max-width: 900px){.faq {
+    padding: 50px 0;
+    &__block {
+        color: $color-text;
+        padding: 40px 50px;
+    }
+    &__title {
+        font-family: "Nunito";
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-family: "Nunito";
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+}}
+@media screen and (min-width: 900px){.faq {
+    padding: 50px 0;
+    &__block {
+        color: $color-text;
+        padding: 40px 50px;
+    }
+    &__title {
+        font-family: "Nunito";
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-family: "Nunito";
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+}}
+

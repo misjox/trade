@@ -1,0 +1,719 @@
+@media screen and (max-width: 450px) {
+  .result {
+    padding: 50px 0;
+  
+    &__trade {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+      }
+  
+      &-img {
+        max-width: 50px;
+        width: 100%;
+      }
+  
+      &-give {
+        color: rgb(54, 51, 51);
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      &-take {
+        color: rgb(54, 51, 51);
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        pointer-events: none;
+        width: 100%;
+        box-sizing: border-box;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      &-icon {
+       display: none;
+      }
+  
+      &-submit {
+        margin-top: 30px;
+        // border: 1px solid rgb(130, 13, 13);
+        border-radius: 5px;
+        color: white;
+        background: rgb(25, 73, 145);
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        padding: 10px 30px;
+        transition: background 250ms linear;
+        cursor: pointer;
+  
+        &:hover {
+          background: rgba(25, 73, 145, 0.7);
+        }
+      }
+    }
+  
+    &__form {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+  
+      & label {
+        width: 100%;
+      }
+      &-input {
+        color: rgb(54, 51, 51);
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      &-label {
+        color: white;
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+    }
+  
+    &__accept {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #e1e9f2;
+      margin-top: 20px;
+      width: 100%;
+      padding: 20px 0;
+      border-radius: 10px;
+  
+      &-title {
+        max-width: 550px;
+        margin-bottom: 20px;
+        color: black;
+        font-weight: 600;
+        font-family: "Nunito", sans-serif;
+        font-size: 20px;
+      }
+  
+      &-head {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-status {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+  
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 20px;
+  
+        &-span {
+          color: blue;
+        }
+      }
+  
+      &-date {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-time {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-giveCoin {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-takeCoin {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-clientPayment {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-generalPayment {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      &-score {
+        text-align: center;
+        margin-top: 15px;
+        color: black;
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+  
+        &-span {
+          color: rgb(33, 136, 220);
+        }
+      }
+  
+      &-payment {
+        border: 1px solid #0a9073;
+        padding: 10px 20px;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+        color: #0a9073;
+        background: transparent;
+        transition: background 250ms linear;
+        transition-property: color,background;
+  
+        &:hover {
+          background: #0a9073;
+          color: #e1e9f2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 900px) {
+  .result {
+    padding-top: 50px;
+  
+    &__trade {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+      }
+  
+      &-img {
+        max-width: 50px;
+        width: 100%;
+      }
+  
+      &-give {
+        color: rgb(54, 51, 51);
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        max-width: 350px;
+        width: 100%;
+        box-sizing: border-box;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      &-take {
+        color: rgb(54, 51, 51);
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        pointer-events: none;
+        max-width: 350px;
+        width: 100%;
+        box-sizing: border-box;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      &-icon {
+       display: none;
+      }
+  
+      &-submit {
+        margin-top: 30px;
+        // border: 1px solid rgb(130, 13, 13);
+        border-radius: 5px;
+        color: white;
+        background: rgb(25, 73, 145);
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        padding: 10px 30px;
+        transition: background 250ms linear;
+        cursor: pointer;
+  
+        &:hover {
+          background: rgba(25, 73, 145, 0.7);
+        }
+      }
+    }
+  
+    &__form {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+  
+      & label {
+        width: 100%;
+        max-width: 350px;
+      }
+      &-input {
+        color: rgb(54, 51, 51);
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      &-label {
+        color: white;
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+    }
+  
+    &__accept {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #e1e9f2;
+      margin-top: 20px;
+      width: 100%;
+      padding: 20px 0;
+      border-radius: 10px;
+  
+      &-title {
+        max-width: 550px;
+        margin-bottom: 20px;
+        color: black;
+        font-weight: 600;
+        font-family: "Nunito", sans-serif;
+        font-size: 20px;
+      }
+  
+      &-head {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-status {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+  
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 20px;
+  
+        &-span {
+          color: blue;
+        }
+      }
+  
+      &-date {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-time {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-giveCoin {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-takeCoin {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-clientPayment {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-generalPayment {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      &-score {
+        text-align: center;
+        margin-top: 15px;
+        color: black;
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+  
+        &-span {
+          color: rgb(33, 136, 220);
+        }
+      }
+  
+      &-payment {
+        border: 1px solid #0a9073;
+        padding: 10px 20px;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+        color: #0a9073;
+        background: transparent;
+        transition: background 250ms linear;
+        transition-property: color,background;
+  
+        &:hover {
+          background: #0a9073;
+          color: #e1e9f2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .result {
+    padding-top: 50px;
+    // background: rgb(73 68 68 / 50%);
+  
+    &__trade {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      &-form {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+  
+      &-img {
+        max-width: 50px;
+        width: 100%;
+      }
+  
+      &-give {
+        color: rgb(54, 51, 51);
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      &-take {
+        color: rgb(54, 51, 51);
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        pointer-events: none;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      &-icon {
+        width: 100px;
+        height: 5px;
+        background: white;
+        border-radius: 5px;
+        margin: 0 20px;
+      }
+  
+      &-submit {
+        margin-top: 30px;
+        // border: 1px solid rgb(130, 13, 13);
+        border-radius: 5px;
+        color: white;
+        background: rgb(25, 73, 145);
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        padding: 10px 30px;
+        transition: background 250ms linear;
+        cursor: pointer;
+  
+        &:hover {
+          background: rgba(25, 73, 145, 0.7);
+        }
+      }
+    }
+  
+    &__form {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+  
+      &-input {
+        color: rgb(54, 51, 51);
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        max-width: 300px;
+        width: 100%;
+        box-sizing: border-box;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      &-label {
+        color: white;
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+    }
+  
+    &__accept {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #e1e9f2;
+      margin-top: 20px;
+      width: 100%;
+      padding: 20px 0;
+      border-radius: 10px;
+  
+      &-title {
+        max-width: 550px;
+        margin-bottom: 20px;
+        color: black;
+        font-weight: 600;
+        font-family: "Nunito", sans-serif;
+        font-size: 20px;
+      }
+  
+      &-head {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-status {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+  
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 20px;
+  
+        &-span {
+          color: blue;
+        }
+      }
+  
+      &-date {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-time {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-giveCoin {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-takeCoin {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-clientPayment {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      &-generalPayment {
+        color: black;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      &-score {
+        text-align: center;
+        margin-top: 15px;
+        color: black;
+        font-weight: 500;
+        font-family: "Nunito", sans-serif;
+  
+        &-span {
+          color: rgb(33, 136, 220);
+        }
+      }
+  
+      &-payment {
+        border: 1px solid #0a9073;
+        padding: 10px 20px;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+        color: #0a9073;
+        background: transparent;
+        transition: background 250ms linear;
+        transition-property: color,background;
+  
+        &:hover {
+          background: #0a9073;
+          color: #e1e9f2;
+        }
+      }
+    }
+  }
+}
+
+
